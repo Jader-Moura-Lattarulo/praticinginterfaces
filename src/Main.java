@@ -3,6 +3,8 @@ import bookprice.PhysicalProduct;
 import currencyconverter.CurrencyConverter;
 import multiplicationtable.MultiplicationTable;
 import rectangularroomcalculator.RectangularRoomCalculator;
+import sellable.Product;
+import sellable.Service;
 import temperatureconverter.StandardTemperatureConverter;
 
 public class Main {
@@ -26,6 +28,12 @@ public class Main {
 
         System.out.println(book.calculateFinalPrice());
         System.out.println(physicalProduct.calculateFinalPrice());
+
+        Product product = new Product(20,150);
+        Service service = new Service(20,150);
+
+        System.out.println(product.calculateTotalPrice());
+        System.out.println(service.calculateTotalPrice());
 
     }
 }
