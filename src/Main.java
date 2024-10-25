@@ -1,5 +1,8 @@
+import currencyconverter.CurrencyConverter;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        CurrencyConverter currencyConverter = new CurrencyConverter();
+        currencyConverter.convertDollarToReal(5.5);
     }
 }
