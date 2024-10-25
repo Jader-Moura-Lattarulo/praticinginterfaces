@@ -1,7 +1,7 @@
 import currencyconverter.CurrencyConverter;
 import multiplicationtable.MultiplicationTable;
-import multiplicationtable.MultiplicativeOperations;
 import rectangularroomcalculator.RectangularRoomCalculator;
+import temperatureconverter.StandardTemperatureConverter;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,5 +14,10 @@ public class Main {
 
         MultiplicationTable multiplicationTable = new MultiplicationTable();
         multiplicationTable.showMultiplicationTable(5);
+
+        StandardTemperatureConverter temperatureConverter = new StandardTemperatureConverter();
+        temperatureConverter.celsiusToFahrenheit(15);
+        temperatureConverter.fahrenheitToCelsius(15);
+
     }
 }
